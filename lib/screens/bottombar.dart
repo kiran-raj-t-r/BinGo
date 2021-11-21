@@ -1,10 +1,9 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+
 import 'package:w/screens/profile.dart';
-import 'package:w/screens/request.dart';
-import 'package:w/screens/status.dart';
+import 'package:w/screens/requestpage.dart';
+import 'package:w/screens/statuspage.dart';
 
 class Userhome extends StatefulWidget {
   const Userhome({Key? key}) : super(key: key);
@@ -21,7 +20,7 @@ class _userhomeState extends State<Userhome> {
     List<Widget> pages = [
       Request(),
       Status(),
-      Profile(),
+      Profilepage(),
     ];
     return Scaffold(
       extendBody: true,
@@ -29,6 +28,8 @@ class _userhomeState extends State<Userhome> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.transparent,
         currentIndex: selectedindex,
+        unselectedItemColor: Colors.white,
+        selectedItemColor: Colors.green,
         onTap: (value) {
           setState(() {
             selectedindex = value;
