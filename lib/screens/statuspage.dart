@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:w/screens/bins.dart';
 
 class Status extends StatelessWidget {
   const Status({Key? key}) : super(key: key);
@@ -103,6 +104,25 @@ class Status extends StatelessWidget {
                       ),
                     )),
               ],
+            ),
+            Container(
+              height: 40,
+              width: 120,
+              margin: EdgeInsets.symmetric(horizontal: 30),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15), color: Colors.white),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const bincollection()),
+                  );
+                },
+                child: const Text(
+                  'Admin',
+                ),
+              ),
             ),
           ],
         ),
