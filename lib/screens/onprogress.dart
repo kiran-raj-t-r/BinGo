@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Bins extends StatelessWidget {
-  const Bins({Key? key}) : super(key: key);
+class Onprogress extends StatelessWidget {
+  const Onprogress({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class Bins extends StatelessWidget {
               Positioned(
                 top: 100,
                 child: Container(
-                  height: 360,
+                  height: 290,
                   width: MediaQuery.of(context).size.width * 0.90,
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   decoration: BoxDecoration(
@@ -40,7 +40,7 @@ class Bins extends StatelessWidget {
                         height: 10,
                       ),
                       Text(
-                        "ID : 456",
+                        "ID:456",
                         style: GoogleFonts.ubuntu(
                           textStyle: TextStyle(
                             color: Colors.white,
@@ -82,36 +82,6 @@ class Bins extends StatelessWidget {
                       ),
                       SizedBox(
                         height: 15,
-                      ),
-                      Row(
-                        children: [
-                          Text(
-                            "WASTE TYPE:  ",
-                            style: TextStyle(color: Colors.white, fontSize: 18),
-                          ),
-                          Column(
-                            children: [
-                              Text(
-                                "FOOD WASTE",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18),
-                              ),
-                              Text(
-                                "RECYCLABLE",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18),
-                              ),
-                              Text(
-                                "TOXIC WASTE",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18),
-                              )
-                            ],
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 10,
                       ),
                       Row(
                         children: [

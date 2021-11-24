@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:w/screens/bins.dart';
+import 'package:w/screens/adminappbar.dart';
 
 class Status extends StatelessWidget {
   const Status({Key? key}) : super(key: key);
@@ -51,9 +51,12 @@ class Status extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontSize: 20),
                     )),
+                SizedBox(
+                  width: 30,
+                ),
                 Container(
                     height: 30,
-                    width: MediaQuery.of(context).size.width * 0.800,
+                    width: 140,
                     child: Text(
                       "STATUS",
                       textAlign: TextAlign.center,
@@ -78,16 +81,13 @@ class Status extends StatelessWidget {
                     child: Text(
                       "456",
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20),
+                      style: TextStyle(color: Colors.white, fontSize: 17),
                     ),
                   ),
                 ),
                 Container(
                     height: 60,
-                    width: MediaQuery.of(context).size.width * 0.80,
+                    width: 200,
                     decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.white,
@@ -95,15 +95,26 @@ class Status extends StatelessWidget {
                         color: Colors.transparent),
                     child: Center(
                       child: Text(
-                        "Your Request is pending",
+                        "PENDING",
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17),
+                        style: TextStyle(color: Colors.white, fontSize: 17),
                       ),
                     )),
+                Container(
+                  height: 60,
+                  width: 80,
+                  decoration: BoxDecoration(color: Colors.white),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'CANCEL REQUEST',
+                    ),
+                  ),
+                ),
               ],
+            ),
+            SizedBox(
+              height: 100,
             ),
             Container(
               height: 40,
